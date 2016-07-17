@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :teams
   resources :players
-  resources :cards
+  resources :cards do 
   resources :gradings
+ end
   resources :columns
   resources :photos
 
