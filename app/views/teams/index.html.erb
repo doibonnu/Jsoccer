@@ -1,0 +1,33 @@
+<div class="j">
+  <h1>J1</h1> 
+   <% @j1teams.each do |team| %>
+    
+      <div class="team">
+      <a href="/teams/<%= team.id %>">
+        <h3><%= team.name %></h3>
+      </a>
+    </div>
+    <% end %>
+</div>
+
+<div class="j">
+  <h1>J2</h1> 
+   <% @j2teams.each do |team| %>
+        <div class="team">
+        <a href="/teams/<%= team.id %>">
+        <h3><%= team.name %></h3>
+      </a>
+    </div>
+    <% end %>
+</div>
+
+<div class="j">
+  <h1>J3</h1> 
+   <% @j3teams.each do |team| %>
+        <div class="team">
+        <a href="/teams/<%= team.id %>">
+        <h3><%= team.name %></h3>
+      </a>
+    </div>
+    <% end %>
+</div>
