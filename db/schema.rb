@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160717091518) do
+ActiveRecord::Schema.define(version: 20160718023335) do
 
   create_table "cards", force: :cascade do |t|
-    t.string   "team_id",    limit: 255
+    t.string   "team_id",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "away_team",  limit: 255
+    t.string   "away_team",    limit: 255
+    t.text     "home_members", limit: 65535
+    t.text     "away_members", limit: 65535
+    t.text     "formation",    limit: 65535
   end
 
   create_table "gradings", force: :cascade do |t|
